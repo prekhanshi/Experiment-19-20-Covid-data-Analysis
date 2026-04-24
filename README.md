@@ -62,3 +62,54 @@ The dataset includes the following columns:
 
 ```python
 data['Active'] = data['Confirmed'] - data['Deaths'] - data['Recovered']
+### 4. Data Exploration
+- Checked dataset structure using `.info()`
+- Identified the latest date in the dataset
+- Filtered data for the most recent records
+
+### 5. Global Analysis
+- Grouped data by country
+- Calculated total confirmed, deaths, recovered, and active cases
+- Identified top affected countries:
+  - US  
+  - India  
+  - Brazil  
+  - France  
+  - Turkey  
+
+### 6. Visualization
+- Created a world choropleth map using Plotly
+
+### 7. India-Specific Analysis
+- Filtered dataset for India
+- Found total number of states/UTs
+- Listed all states
+
+### 8. Data Cleaning (India States)
+- Replaced 'Unknown' values with NaN
+- Filled missing values using mode
+
+### 9. Latest India Data Analysis
+- Extracted latest COVID data for India
+- Compared cases across states
+
+### 10. Top Affected States in India
+- Maharashtra (highest cases)  
+- Karnataka  
+- Kerala  
+- Tamil Nadu  
+- Uttar Pradesh  
+
+---
+
+## 📊 Key Results
+- Total Countries Analyzed: 195  
+- Most Affected Country: US  
+- Second Most Affected: India  
+- Most Affected State in India: Maharashtra  
+- Total Indian States/UTs: 38  
+
+---
+
+## 📚 Conclusion
+This experiment demonstrates how pandemic data can be analyzed using Pandas. It helps in understanding global and national trends of COVID-19 and builds foundational data analysis skills.
