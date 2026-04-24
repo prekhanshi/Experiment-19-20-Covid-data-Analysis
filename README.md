@@ -86,9 +86,6 @@ The dataset includes the following columns:
 
 ### 3. Feature Engineering  
 - Created a new column for Active Cases:
-
-```python
-data['Active'] = data['Confirmed'] - data['Deaths'] - data['Recovered']
 ### 4. Data Exploration
 Checked dataset structure using .info()
 Identified the latest date in the dataset
